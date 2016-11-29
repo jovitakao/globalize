@@ -71,6 +71,8 @@ QUnit.test( "should parse invalid grouping separators as NaN", function( assert 
 QUnit.test( "should parse negative integers", function( assert ) {
 	assert.equal( parse( "-3", properties( "0", en ) ), -3 );
 	assert.equal( parse( "(3)", properties( "0;(0)", en ) ), -3 );
+	assert.equal( parse( "-3", properties( "0", sv ) ), -3 );
+	assert.equal( parse( "\u22123", properties( "0", sv ) ), -3 );
 });
 
 QUnit.test( "should parse mixed non breaking space and breaking space", function( assert ) {

@@ -51,7 +51,7 @@ QUnit.test( "should return invertedSymbolMap", function( assert ) {
 		" ": ",",
 		"×10^": "E",
 		"‰": "‰",
-		"−": "-"
+		"-": "-"
 	});
 });
 
